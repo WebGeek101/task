@@ -1,6 +1,7 @@
 package com.pavan.task.steps;
 
 import com.google.gson.*;
+import com.pavan.task.TaskApplication;
 import com.pavan.task.helpers.RequestHelpers;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -17,6 +18,9 @@ import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest(classes = TaskApplication.class)
 public class personStepDefinitons {
 
     private JsonObject jsonObject;
