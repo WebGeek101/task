@@ -7,4 +7,4 @@ EXPOSE 8086
 ADD target/spring-boot-docker-maven.jar spring-boot-docker-maven.jar
 
 # Run the jar file
-ENTRYPOINT ["java","-jar","spring-boot-docker-maven.jar"]
+ENTRYPOINT ["java","-jar","/spring-boot-docker-maven.jar"]
