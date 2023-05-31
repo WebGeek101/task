@@ -6,12 +6,12 @@ Feature: Person API
     When I create the person
     Then the response status code should be "201"
 
-#  Scenario: Get a person by ID
-#    Given there is a person with ID 1
-#    When I request the person by ID
-#    Then the response should contain the following details
-#      | id | name  | age | location  |
-#      | 1  | Pavan | 21  | Bangalore |
+  Scenario: Get a person by ID
+    Given there is a person with ID 3
+    When I request the person by ID
+    Then the response should contain the following details
+      | id | name    | age | location  |
+      | 3  | Pavan M | 21  | Bangalore |
 
   Scenario: Retrieve all persons
     Given there are some persons in the system
